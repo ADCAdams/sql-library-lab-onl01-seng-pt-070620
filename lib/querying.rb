@@ -45,7 +45,7 @@ end
 def select_character_names_and_number_of_books_they_are_in
   "SELECT characters.name, subgenres.name
   FROM characters
-  JOIN series 
+  JOIN character 
   ON authors.id = series.author_id
   JOIN subgenres
   ON series.subgenre_id = subgenres.id;"
